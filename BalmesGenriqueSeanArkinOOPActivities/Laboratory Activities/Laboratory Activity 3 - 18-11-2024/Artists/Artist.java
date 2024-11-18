@@ -3,14 +3,12 @@ public class Artist {
     private int age;
     private String specialty;
 
-    // Constructor
     public Artist(String name, int age, String specialty) {
         this.name = name;
         this.age = age;
         this.specialty = specialty;
     }
 
-    // Getters
     public String getName() {
         return name;
     }
@@ -23,10 +21,9 @@ public class Artist {
         return specialty;
     }
 
-    @Override
-    public String toString() {
+    public String displayInfo() {
         return "Artist Name: " + name + "\n" +
-                "Age: " + age + "\n" +
-                "Specialty: " + specialty;
+               "Age: " + age + "\n" +
+               "Specialty: " + specialty;
     }
 }
